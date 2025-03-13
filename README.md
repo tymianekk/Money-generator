@@ -1,1 +1,2 @@
-# Money-generator
+https://generator-pieniedzy.netlify.app
+
