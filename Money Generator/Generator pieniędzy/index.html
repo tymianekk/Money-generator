@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator pieniędzy 100% legit no scam no virus no trojan no malware no spyware 100% legal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            font-family: "Comic Sans MS", "Comic Sans", "Comic Neue";
+            color: white;
+            text-align: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nwmJakNazwac {
+            background-color: rgb(19, 19, 19);
+            padding: 30px;
+            gap: 20px;
+            margin-left: 25%;
+            margin-right: 25%;
+            border: 3px solid white;
+            border-radius: 30px;
+            box-shadow: 0px 10px 10px white;
+        }
+        #generowane {
+            font-size: 30px;
+        }
+        button {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .buttons button:hover {
+            background-color: green;
+        }
+        #pln:hover {
+            background-image: url(Images/pln.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: black;
+            cursor: pointer;
+        }
+        #eur:hover {
+            background-image: url(Images/eur.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: white;
+            cursor: pointer;
+        }
+        #usd:hover {
+            background-image: url(Images/usa.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: black;
+            cursor: pointer;
+        }
+        #gpb:hover {
+            background-image: url(Images/uk.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: black;
+            cursor: pointer;
+        }
+        #rub:hover {
+            background-image: url(Images/rus.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: white;
+            cursor: pointer;
+        }
+        #huf:hover {
+            background-image: url(Images/hun.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: black;
+            cursor: pointer;
+        }
+        #jen:hover {
+            background-image: url(Images/jap.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: black;
+            cursor: pointer;
+        }
+        #yuen:hover {
+            background-image: url(Images/chn.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: white;
+            cursor: pointer;
+        }
+        #filip:hover {
+            background-image: url(Images/filip.png);
+            cursor: pointer;
+            background-size: cover; 
+            background-position: center;
+            border: 2px solid black;
+            color: black;
+            cursor: pointer;
+        }
+        .bottom {
+            background-color: rgb(19, 19, 19);
+            margin-top: 30px;
+            padding: 10px;
+        }
+    </style>
+    <script>
+        //generowanie
+        let money = 0;
+        let grosze = 0;
+        let interval;
+        let waluta = "PLN";
+
+        function coPodgladasz() {
+            if (grosze < 10){
+                document.getElementById('generowane').textContent = `${money}.0${grosze} ${waluta}`;
+            } else {
+                document.getElementById('generowane').textContent = `${money}.${grosze} ${waluta}`;
+            }
+        }
+
+        function generowanie() {
+            grosze = grosze + 1;
+
+            if (grosze > 99){
+                money = money + 1;
+                grosze = 0;
+            }
+            coPodgladasz()
+        };
+
+        function generowanieAutomatyczne() {
+
+            if (!interval) {
+                interval = setInterval(generowanie, 1)
+            }
+        }
+
+        function stop() {
+            clearInterval(interval);
+            interval = null;
+        }
+
+        function reset() {
+            grosze = 0;
+            money = 0;
+            stop();
+            document.getElementById('generowane').textContent = `${money}.0${grosze} ${waluta}`;
+        }       
+
+        function zloty() {
+            waluta = "PLN";
+            reset()
+        }
+
+        function euro() {
+            waluta = "€";
+            reset()
+        }
+
+        function dolar() {
+            waluta = "$";
+            reset()
+        }
+
+        function pound() {
+            waluta = "£";
+            reset()
+        }
+
+        function farenfajty() {
+            waluta = "FT";
+            reset()
+        }
+
+        function youanJen() {
+            waluta = "¥";
+            reset()
+        }
+
+        function filip() {
+            waluta = "₱";
+            reset()
+        }
+
+        function ruble() {
+            waluta = "₽";
+            reset()
+        }
+    </script>
+</head>
+<body>
+    <h1>
+        Generator pieniędzy 100% legit no scam no virus no trojan no malware no spyware 100% legal
+    </h1>
+    <div class="nwmJakNazwac">
+        <div class="buttons">
+            <button onclick="generowanie()">
+                Generój
+            </button>
+            <button onclick="generowanieAutomatyczne()">
+                Generój automatycznie
+            </button>
+            <button onclick="stop()">
+                Zatrzymaj generowanie
+            </button>
+            <button onclick="reset()">
+                Reset
+            </button>
+        </div>
+        <div id="generowane">
+            0.00 PLN
+        </div>
+        <div>
+            <button onclick="zloty()" id="pln">
+                PLN
+            </button>
+            <button onclick="euro()" id="eur">
+                EUR
+            </button>
+            <button onclick="dolar()" id="usd">
+                USD
+            </button>
+            <button onclick="pound()" id="gpb">
+                GBP
+            </button>
+            <button onclick="ruble()" id="rub">
+                RUB 
+            </button>
+            <button onclick="farenfajty()" id="huf">
+                HUF
+            </button>
+            <button onclick="youanJen()" id="jen">
+                JPY 
+            </button>
+            <button onclick="youanJen()" id="yuen">
+                CNY 
+            </button>
+            <button onclick="filip()" id="filip">
+                PHP 
+            </button>
+        </div>
+    </div>
+    <div class="bottom">
+        <p>©tymianekk 2025</p>
+    </div>
+</body>
+</html>
